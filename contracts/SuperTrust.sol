@@ -5,16 +5,12 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract SutToken is ERC20, ERC20Pausable, Ownable {
+contract SuperTrust is ERC20, ERC20Pausable, Ownable {
   constructor()
     ERC20("SUPER TRUST", "SUT")
     Ownable(msg.sender)
   {
     _mint(msg.sender, 238403732 * 10 ** decimals());
-  }
-
-  function decimals() public view virtual override returns (uint8) {
-    return 4;
   }
 
   function pause() public onlyOwner {

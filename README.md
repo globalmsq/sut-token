@@ -3,6 +3,8 @@
 This is a project to issue ERC20-based SUT tokens.
 Ownable and Pause features are included.
 
+Deployed Token: https://polygonscan.com/token/0x98965474ecbec2f532f1f780ee37b0b05f77ca55
+
 ## Pre Required
 
 * Nodejs 20+

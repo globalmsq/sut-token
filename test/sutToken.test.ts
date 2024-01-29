@@ -4,7 +4,7 @@ import { SutToken } from "../typechain-types";
 
 describe("SutToken contract", function () {
   before(async function () {
-    this.SutToken = await hre.ethers.getContractFactory("SutToken");
+    this.SutToken = await hre.ethers.getContractFactory("SuperTrust");
   });
 
   beforeEach(async function () {
@@ -31,7 +31,7 @@ describe("SutToken contract", function () {
   });
 
   it('Has a valid decimal', async function () {
-    expect((await this.sutToken.decimals()).toString()).to.equal('4');
+    expect((await this.sutToken.decimals()).toString()).to.equal('18');
   })
 
   it('Has a valid total supply', async function () {

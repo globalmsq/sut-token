@@ -5,7 +5,7 @@ async function main() {
   const contractOwner = await ethers.getSigners();
   console.log(`Deploying contract from: ${contractOwner[0].address}`);
 
-  const SutToken = await ethers.getContractFactory('SutToken');
+  const SutToken = await ethers.getContractFactory('SuperTrust');
 
   console.log('Deploying SutToken...');
   const sutToken = await SutToken.deploy();
