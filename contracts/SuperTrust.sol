@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract SuperTrust is ERC20, ERC20Pausable, Ownable {
   constructor()
-    ERC20("SUPER TRUST", "SUT")
+    ERC20("SUPER TRUST", "TEST-SUT")
     Ownable(msg.sender)
   {
     _mint(msg.sender, 238403732 * 10 ** decimals());

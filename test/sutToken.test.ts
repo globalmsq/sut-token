@@ -27,7 +27,7 @@ describe("SutToken contract", function () {
 
   it('Creates a token with a symbol', async function () {
     expect(await this.sutToken.symbol()).to.exist;
-    expect(await this.sutToken.symbol()).to.equal('SUT');
+    expect(await this.sutToken.symbol()).to.equal('TEST-SUT');
   });
 
   it('Has a valid decimal', async function () {

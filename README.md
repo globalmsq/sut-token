@@ -1,9 +1,9 @@
-# SUT Token
+# TEST-SUT Token
 
-This is a project to issue ERC20-based SUT tokens.
+This is a project to issue ERC20-based TEST-SUT tokens.
 Ownable and Pause features are included.
 
-Deployed Token: https://polygonscan.com/token/0x98965474ecbec2f532f1f780ee37b0b05f77ca55
+Deployed Token: https://polygonscan.com/token/0xd5b32FDcE221542D046eca5954CB1D1A32F357D9
 
 ## Pre Required
 
