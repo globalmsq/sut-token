@@ -91,7 +91,7 @@ Deploy to the desired network.
 		yarn deploy:local
 		```
 
-* Polygon Testnet (Mumbai)
+* Polygon Testnet (Amoy)
 
 	```
 	yarn deploy:testnet
@@ -109,17 +109,17 @@ After deployment, you need to remember the `address` of the deployed contract.
 
 By registering the contract's code with Explorer, Verify gives it credibility with users.
 
-It can be found at [https://polygonscan.com](https://polygonscan.com) and [https://mumbai.polygonscan.com](https://polygonscan.com) and requires an API Key.
+It can be found at [https://polygonscan.com](https://polygonscan.com) and [https://amoy.polygonscan.com](https://amoy.polygonscan.com) and requires an API Key.
 
 For `<contract_address>`, use the address you remembered from the deployment.
 
-* Polygon Testnet (Mumbai)
+* Polygon Testnet (Amoy)
 
 	```
 	yarn verify:testnet <contract_address>
 	```
 
-	Open https://mumbai.polygonscan.com/token/`<contract_address>`
+	Open https://amoy.polygonscan.com/token/`<contract_address>`
 
 * Polygon Mainnet (MATIC)
 

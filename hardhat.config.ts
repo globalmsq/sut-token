@@ -16,6 +16,11 @@ const config: HardhatUserConfig = {
       url: 'https://rpc-mumbai.maticvigil.com',
       accounts: [`${process.env.PRIVATE_KEY}`],
     },
+    amoy: {
+      chainId: 80002,
+      url: 'https://rpc-amoy.polygon.technology',
+      accounts: [`${process.env.PRIVATE_KEY}`],
+    },
     polygon: {
       chainId: 137,
       url: "https://polygon-rpc.com",
@@ -27,7 +32,17 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
- }
+    customChains: [
+      {
+        network: "amoy",
+        chainId: 80002,
+        urls: {
+          apiURL: "https://api-amoy.polygonscan.com/api",
+          browserURL: "https://amoy.polygonscan.com"
+        }
+      }
+    ]
+  }
 };
 
 export default config;
